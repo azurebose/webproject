@@ -11,9 +11,9 @@
 <p style="text-align:center; color: brown">
   Thanks,<br>
   kodelli bose<br>
-  techworldwithmurali.com<br>
+  devopsengineer<br>
   bose.kodelli09@gmail.com<br>
-  <b>Youtube Channel:</b> TechWorld with Murali<br>
+  <b>contact:</b> 8919559089<br>
 </p>
 </body>
 </html>
