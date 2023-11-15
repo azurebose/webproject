@@ -18,4 +18,15 @@
   <build>
     <finalName>web-application</finalName>
   </build>
+  <distributionManagement>
+      <snapshotRepository>
+        <id>jfrog-snapshots</id>
+        <url>http://52.23.178.206:8082/maven-snapshots/</url>
+      </snapshotRepository>
+      <repository>
+        <id>jfrog-releases</id>
+        <url>http://52.23.178.206:8082/repository/maven-releases/</url>
+      </repository>
+    </distributionManagement>
+
 </project>
