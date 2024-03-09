@@ -1,6 +1,21 @@
+# Use a base image with Java and specify the version
 FROM tomcat:9
-RUN apt update
+
+# Set environment variables
+ENV CATALINA_HOME /usr/local/tomcat
+ENV PATH $CATALINA_HOME/bin:$PATH
+
+# Create a directory for Tomcat
 WORKDIR /usr/local/tomcat
-ADD target/*.war webapps/
+
+# Download and extract Tomcat 9
+RUN apt-get update
+
+# Copy the WAR file into the webapps directory
+ADD /*.war /usr/local/tomcat/webapps/
+
+# Expose the default Tomcat port
 EXPOSE 8080
+
+# Start Tomcat when the container starts
 CMD ["catalina.sh", "run"]
