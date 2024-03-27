@@ -12,7 +12,7 @@ WORKDIR /usr/local/tomcat
 RUN apt-get update
 
 # Copy the WAR file into the webapps directory
-ADD /*.war /usr/local/tomcat/webapps/web-application
+COPY /*.war /usr/local/tomcat/webapps/web-application.war
 
 # Expose the default Tomcat port
 EXPOSE 8080
